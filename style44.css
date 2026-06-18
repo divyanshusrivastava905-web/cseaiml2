@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+.navbar{
+    background:#131921;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#ff9900;
+}
+
+.search-box{
+    display:flex;
+    width:50%;
+}
+
+.search-box input{
+    flex:1;
+    padding:10px;
+    border:none;
+}
+
+.search-box button{
+    background:#febd69;
+    border:none;
+    padding:10px 15px;
+    cursor:pointer;
+}
+
+.cart{
+    font-size:18px;
+}
+
+.hero{
+    background:url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600")
+    center/cover;
+    height:300px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-shadow:2px 2px 4px black;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.product-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:15px;
+}
+
+.product-info h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#B12704;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.btn{
+    width:100%;
+    padding:10px;
+    background:#ffd814;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#f7ca00;
+}
